@@ -81,15 +81,6 @@ main {
   transform: translateY(0);
 }
 
-// メニューが開いている時のbodyスクロール制御
-body.menu-open {
-  overflow: hidden;
-
-  @include mq(md) {
-    overflow: hidden;
-  }
-}
-
 
 .color-theme {
   color: $color-theme;

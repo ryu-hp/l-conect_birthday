@@ -37,19 +37,6 @@ $mediaquerys: (
   @return math.div($font_size, $window_width) * 100vw;
 }
 
-// 画面幅の変数を定義
-$minWindow: 375;
-$maxWindow: 1210;
-
-// クランプによる流動的フォントサイズ
-@function clp($base_font) {
-  @return clamp(
-    $base_font * 0.625 * 0.1rem,
-    ($base_font * 0.625 * 0.1rem) + math.div($base_font * 0.15, $maxWindow - $minWindow) * (100vw - $minWindow * 1px),
-    $base_font * 0.625 * 0.115rem
-  );
-}
-
 // フォントファミリー
 $base-font-family:  "Noto Sans JP", sans-serif;
 $second-font-family: "Barlow Condensed", sans-serif;
