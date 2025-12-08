@@ -41,9 +41,9 @@ main {
 
 .container {
   width: 100%;
-  max-width: calc(1480px + 3.75rem);
-  padding-right: 1.875rem;
-  padding-left: 1.875rem;
+  max-width: 790px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-sizing: border-box;
@@ -51,9 +51,15 @@ main {
 }
 @media screen and (max-width: 767px) {
   .container {
-    padding-right: 1.25rem;
-    padding-left: 1.25rem;
+    padding-right: 16px;
+    padding-left: 16px;
   }
+}
+
+.birth-wrapper {
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .only-sp {

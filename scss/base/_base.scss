@@ -54,6 +54,12 @@ main {
   }
 }
 
+.birth-wrapper {
+  max-width: $inner;
+  margin-right:auto;
+  margin-left:auto;
+}
+
 // ユーティリティクラス
 .only-sp {
   display: none;
