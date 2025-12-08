@@ -60,6 +60,7 @@ main {
   max-width: 750px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 
 .only-sp {
@@ -254,15 +255,10 @@ body {
 }
 
 .birth-header {
-  padding: 1.25rem 0;
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-@media screen and (max-width: 767px) {
-  .birth-header {
-    padding: 0.9375rem 0;
-  }
+  background-image: url(../image/bg-01.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .birth-header__container {
@@ -288,15 +284,10 @@ body {
 }
 
 .birth-fv {
-  position: relative;
-  padding: 3.75rem 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .birth-fv {
-    padding: 2.5rem 0;
-  }
+  background-image: url(../image/bg-02.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .birth-fv__inner {
@@ -340,14 +331,21 @@ body {
   }
 }
 
-.birth-key-message {
-  padding: 5rem 0;
-  background-color: #fff;
+.birth-fv__ribbon {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
-@media screen and (max-width: 767px) {
-  .birth-key-message {
-    padding: 3.125rem 0;
-  }
+
+.birth-bg-wrapper {
+  background-image: url(../image/bg-04.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .birth-key-message__inner {
@@ -365,14 +363,10 @@ body {
 }
 
 .birth-head {
-  padding: 3.75rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f8f9fa));
-  background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%);
-}
-@media screen and (max-width: 767px) {
-  .birth-head {
-    padding: 2.5rem 0;
-  }
+  background-image: url(../image/bg-05.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .birth-head__inner {
@@ -409,14 +403,10 @@ body {
 }
 
 .birth-ribbon {
-  padding: 3.75rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
-}
-@media screen and (max-width: 767px) {
-  .birth-ribbon {
-    padding: 2.5rem 0;
-  }
+  background-image: url(/image/birth-ribbon-bg.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
 }
 
 .birth-ribbon__inner {
@@ -465,18 +455,7 @@ body {
 }
 
 .birth-form {
-  padding: 5rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
-  background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-}
-@media screen and (max-width: 767px) {
-  .birth-form {
-    padding: 3.125rem 0;
-  }
-}
-
-.birth-form__inner {
-  max-width: 800px;
+  background: #2a2a2a;
 }
 
 .birth-form__contentes {
@@ -497,14 +476,10 @@ body {
 }
 
 .birth-footer {
-  padding: 3.75rem 0 2.5rem;
-  background-color: #2c3e50;
-  color: #fff;
-}
-@media screen and (max-width: 767px) {
-  .birth-footer {
-    padding: 2.5rem 0 1.875rem;
-  }
+  background-image: url(../image/bg-08.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
 }
 
 .birth-footer__inner {

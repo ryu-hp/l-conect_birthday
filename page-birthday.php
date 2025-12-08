@@ -39,52 +39,58 @@
           <img src="" alt="">
         </div>
       </div>
-    </section>
-    <section id = "birth-key-message" class = "birth-key-message birth-section">
-      <div class="birth-wrapper">
-        <div class="birth-key-message__inner container">
-          <div class="birth-key-message__contentes">
-            <img src="" alt="">
-          </div>
-        </div>
+      <div class="birth-fv__ribbon">
+        <img src="/image/bg-03.webp" alt="リボン">
       </div>
     </section>
-    <section id = "birth-head" class = "birth-head birth-section">
-      <div class="birth-wrapper">
-        <div class="birth-head__inner container">
-          <div class="birth-head__contentes">
-            <img src="" alt="">
+
+    <div class="birth-bg-wrapper">
+      <section id = "birth-key-message" class = "birth-key-message birth-section">
+        <div class="birth-wrapper">
+          <div class="birth-key-message__inner container">
+            <div class="birth-key-message__contentes">
+              <img src="" alt="">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id = "birth-description" class = "birth-description birth-section">
-      <div class="birth-wrapper">
-        <div class="birth-description__inner container">
-          <div class="birth-description__contentes">
-            <img src="" alt="">
+      </section>
+      <section id = "birth-head" class = "birth-head birth-section">
+        <div class="birth-wrapper">
+          <div class="birth-head__inner container">
+            <div class="birth-head__contentes">
+              <img src="" alt="">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id = "birth-ribbon" class = "birth-ribbon birth-section">
-      <div class="birth-wrapper">
-        <div class="birth-ribbon__inner container">
-          <div class="birth-ribbon__contentes">
-            <img src="" alt="">
+      </section>
+      <section id = "birth-description" class = "birth-description birth-section">
+        <div class="birth-wrapper">
+          <div class="birth-description__inner container">
+            <div class="birth-description__contentes">
+              <img src="" alt="">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id = "birth-info" class = "birth-info birth-section">
-      <div class="birth-wrapper">
-        <div class="birth-info__inner container">
-          <div class="birth-info__contentes">
-            <img src="" alt="">
+      </section>
+      <section id = "birth-ribbon" class = "birth-ribbon birth-section">
+        <div class="birth-wrapper">
+          <div class="birth-ribbon__inner container">
+            <div class="birth-ribbon__contentes">
+              <img src="" alt="">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id = "birth-info" class = "birth-info birth-section">
+        <div class="birth-wrapper">
+          <div class="birth-info__inner container">
+            <div class="birth-info__contentes">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <section id = "birth-form" class = "birth-form birth-section">
       <div class="birth-wrapper">
         <div class="birth-form__inner container">
