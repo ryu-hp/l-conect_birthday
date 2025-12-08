@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 30px 0 38px;
+  padding: rem(30) 0 rem(38);
   position: relative;
 }
 .birth-header::after {
@@ -26,7 +26,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: rem(8);
   background: linear-gradient(90deg, #896328 0%, #f8f0aa 44.8%, #c49735 100%);
   z-index: 1;
 }
@@ -50,7 +50,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translateX(2%);
+  transform: translateX(14%);
+  width: calc(380 / 750 * 100%);
 }
 
 .birth-fv__ribbon {
@@ -65,6 +66,7 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
+  padding: rem(30) 0;
 }
 
 
@@ -80,6 +82,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: rem(30) 0;
 }
 
 .birth-head__inner {
@@ -109,7 +112,7 @@ body {
 
 // リボンセクション
 .birth-ribbon {
-  background-image: url(/image/birth-ribbon-bg.webp);
+  background-image: url(../image/birth-ribbon-bg.webp);
   background-size: contain;
   background-position: center;
   background-repeat: repeat-x;
@@ -124,7 +127,7 @@ body {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-5%);
   width: calc(154 / 750 * 100%);
 }
 
@@ -137,8 +140,9 @@ body {
 }
 
 .birth-info__contentes {
-  background-color: #fff;
   width: calc(633 / 750 * 100%);
+  margin-right:auto;
+  margin-left:auto;
 }
 .birth-info__item:not(:last-child) {
   margin-bottom: rem(40); 
@@ -176,7 +180,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: rem(8);
   background: linear-gradient(90deg, #896328 0%, #f8f0aa 44.8%, #c49735 100%);
   z-index: 1;
 }
