@@ -10,13 +10,28 @@
   <!-- Favicon -->
   <link rel="icon" href="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/favicon.ico">
   
+  <!-- Adobe Fonts -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'ffh3piw',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/')); ?>/css/style.css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/')); ?>/css/style.css?v=<?php echo get_the_date('Y-m-d') ?>">
+  
+  <!-- Meta Robots -->
+  <meta name="robots" content="noindex,nofollow">
 </head>
 <body>
   <header id="birth-header" class="birth-header">
@@ -116,7 +131,7 @@
               ご参加希望の方はこちらからお申し込みください。
             </p>
             <div class="birth-form__contentes-form">
-              <?php echo do_shortcode('[contact-form-7 id="123" title="バースデイ＆5周年パーティー"]'); ?>
+              <?php echo do_shortcode('[contact-form-7 id="e470f08" title="お問い合わせフォーム"]'); ?>
             </div>
           </div>
         </div>

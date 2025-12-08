@@ -37,9 +37,9 @@ $mediaquerys: (
   @return math.div($font_size, $window_width) * 100vw;
 }
 
-// フォントファミリー
-$base-font-family:  "Noto Sans JP", sans-serif;
-$second-font-family: "Barlow Condensed", sans-serif;
+// フォントファミリー, "", 
+$base-font-family:  "source-han-serif-jp-subset", sans-serif;
+$second-font-family: "Noto Serif JP", serif;
 
 // フォントウェイト
 $w-black : 900;
@@ -52,13 +52,13 @@ $light : 300;
 $color-black: #313131;
 $color-white: #ffffff;
 // プライマリーブルー（テーマカラー）
-$color-theme: #0172D5;
+$color-theme: #ed1c24;
 // アクセントレッド
-$color-red: #E8403A;
+$color-gold: #998043;
 // セクション背景用ライトブルー
 $color-bg: #F3F7FF;
 // テキスト用メイングレー
-$color-main_gray: #333333;
+$color-main_gray: #000;
 
 // レイアウト幅
 $inner: 750px;
