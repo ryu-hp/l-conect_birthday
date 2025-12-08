@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>安家社長バースデイ＆L・コネクト5周年パーティーのお知らせ</title>
+  <meta name="description" content="やすか社長バースデイ＆L・コネクト5周年パーティーのお知らせ">
+  <meta name="format-detection" content="telephone=no">
+  <title>やすか社長バースデイ＆L・コネクト5周年パーティーのお知らせ</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="image/favicon.ico">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header id="birth-header" class="birth-header">
