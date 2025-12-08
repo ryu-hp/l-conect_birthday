@@ -66,9 +66,11 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
-  padding: rem(30) 0;
 }
 
+.birth-key-message {
+  padding: rem(30) 0;
+}
 
 .birth-key-message__contentes {
   width: calc(610 / 750 * 100%);
@@ -78,11 +80,25 @@ body {
 
 // 見出しセクション
 .birth-head {
-  background-image: url(../image/bg-05.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: rem(30) 0;
+  background: linear-gradient(90deg, #1f0000 0%, #860000 14.5%, #de1100 46.7%, #b40000 79%, #540000 100%);
+  padding: rem(30) 0 0;
+  position: relative;
+}
+.birth-head::before,
+.birth-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ffcb00 0%, #ffffd2 25.2%, #bd4b00 59.6%, #ffe934 87.1%, #ffffd2 100%);
+  z-index: 1;
+}
+.birth-head::before {
+  top: rem(10);
+}
+.birth-head::after {
+  bottom: rem(10);
 }
 
 .birth-head__inner {
@@ -112,23 +128,40 @@ body {
 
 // リボンセクション
 .birth-ribbon {
-  background-image: url(../image/birth-ribbon-bg.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat-x;
   height: 55px;
+  background: linear-gradient(90deg, #1f0000 0%, #860000 14.5%, #de1100 46.7%, #b40000 79%, #540000 100%);
+  position: relative;
   @include mq(md) {
     height: rem(55);
   }
 }
+
+.birth-ribbon::before,
+.birth-ribbon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(180deg, #ffcb00 0%, #ffffd2 25.2%, #bd4b00 59.6%, #ffe934 87.1%, #ffffd2 100%);
+  z-index: 1;
+}
+.birth-ribbon::before {
+  top: rem(10);
+}
+.birth-ribbon::after {
+  bottom: rem(10);
+}
+
 
 
 .birth-ribbon__contentes {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-5%);
+  transform: translateY(-15%);
   width: calc(154 / 750 * 100%);
+  z-index: 2;
 }
 
 // 開催情報
@@ -172,7 +205,7 @@ body {
   background-position: center;
   background-repeat: repeat-x;
   position: relative;
-  padding: rem(30) 0 rem(38);
+  padding: rem(38) 0 rem(30);
 }
 .birth-footer::after {
   content: "";

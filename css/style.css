@@ -309,6 +309,9 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: repeat;
+}
+
+.birth-key-message {
   padding: 1.875rem 0;
 }
 
@@ -319,11 +322,30 @@ body {
 }
 
 .birth-head {
-  background-image: url(../image/bg-05.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 1.875rem 0;
+  background: -webkit-gradient(linear, left top, right top, from(#1f0000), color-stop(14.5%, #860000), color-stop(46.7%, #de1100), color-stop(79%, #b40000), to(#540000));
+  background: linear-gradient(90deg, #1f0000 0%, #860000 14.5%, #de1100 46.7%, #b40000 79%, #540000 100%);
+  padding: 1.875rem 0 0;
+  position: relative;
+}
+
+.birth-head::before,
+.birth-head::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffcb00), color-stop(25.2%, #ffffd2), color-stop(59.6%, #bd4b00), color-stop(87.1%, #ffe934), to(#ffffd2));
+  background: linear-gradient(90deg, #ffcb00 0%, #ffffd2 25.2%, #bd4b00 59.6%, #ffe934 87.1%, #ffffd2 100%);
+  z-index: 1;
+}
+
+.birth-head::before {
+  top: 0.625rem;
+}
+
+.birth-head::after {
+  bottom: 0.625rem;
 }
 
 .birth-head__inner {
@@ -352,11 +374,10 @@ body {
 }
 
 .birth-ribbon {
-  background-image: url(../image/birth-ribbon-bg.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat-x;
   height: 55px;
+  background: -webkit-gradient(linear, left top, right top, from(#1f0000), color-stop(14.5%, #860000), color-stop(46.7%, #de1100), color-stop(79%, #b40000), to(#540000));
+  background: linear-gradient(90deg, #1f0000 0%, #860000 14.5%, #de1100 46.7%, #b40000 79%, #540000 100%);
+  position: relative;
 }
 @media screen and (max-width: 767px) {
   .birth-ribbon {
@@ -364,13 +385,34 @@ body {
   }
 }
 
+.birth-ribbon::before,
+.birth-ribbon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffcb00), color-stop(25.2%, #ffffd2), color-stop(59.6%, #bd4b00), color-stop(87.1%, #ffe934), to(#ffffd2));
+  background: linear-gradient(180deg, #ffcb00 0%, #ffffd2 25.2%, #bd4b00 59.6%, #ffe934 87.1%, #ffffd2 100%);
+  z-index: 1;
+}
+
+.birth-ribbon::before {
+  top: 0.625rem;
+}
+
+.birth-ribbon::after {
+  bottom: 0.625rem;
+}
+
 .birth-ribbon__contentes {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
   width: 20.5333333333%;
+  z-index: 2;
 }
 
 .birth-info {
@@ -414,7 +456,7 @@ body {
   background-position: center;
   background-repeat: repeat-x;
   position: relative;
-  padding: 1.875rem 0 2.375rem;
+  padding: 2.375rem 0 1.875rem;
 }
 
 .birth-footer::after {
