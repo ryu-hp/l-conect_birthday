@@ -1,0 +1,240 @@
+@use "../global" as *;
+
+.footer {
+  background: $gradient-freedge;
+  color: $color-white;
+  padding: rem(132) 0 rem(90);
+
+  @include mq(md) {
+    padding: rem(80) 0 rem(60);
+  }
+}
+
+.footer__contact {
+  padding-bottom: rem(80);
+  border-bottom: 1px solid $color-white;
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+.footer__contact-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(40);
+}
+.section-title-contents.section-title-contents--contact {
+  margin-bottom: rem(68);
+}
+.section-title-contents--contact .section-title,
+.section-title-contents--contact .section-subtitle {
+  color: $color-white;
+  -webkit-text-fill-color: unset;
+}
+.footer__contact-image {
+  width: calc(457 / 1480 * 100%);
+  position: absolute;
+  bottom: 0;
+  right: calc(41 / 1480 * 100%);
+  z-index: -1;
+}
+
+.footer__contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: rem(90);
+  height: rem(72);
+  box-sizing: border-box;
+  border: 1px solid $color-white;
+  border-radius: rem(40);
+  background-color: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer__contact:hover .footer__contact-btn {
+  background-color: $color-white;
+}
+
+.footer__contact-btn-icon {
+  width: 17.42px;
+  height: 8.25px;
+}
+
+.footer__contact-btn-icon path {
+  fill: $color-white;
+  transition: fill 0.3s ease;
+}
+
+.footer__contact:hover .footer__contact-btn-icon path {
+  fill: $color-theme;
+}
+
+.footer__content {
+  padding-top: rem(80);
+  padding-bottom: rem(90);
+}
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+    flex-direction: column;
+    gap: rem(40);
+  }
+}
+.footer__company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: $color-white;
+}
+
+.footer__logo {
+  max-width: rem(321);
+  width: 100%;
+  margin-bottom: rem(20);
+}
+.footer__logo a {
+  display: block;
+}
+
+.footer__address {
+  font-size: rem(16);
+  font-weight: $medium;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: rem(40);
+}
+
+.footer__copy {
+  margin-top: auto;
+}
+
+.footer__copy p {
+  font-size: rem(14);
+  font-family: $second-font-family;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+
+.footer__nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  @include mq(md) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  gap: rem(40);
+  flex-wrap: wrap;
+}
+
+.footer__menu li {
+  list-style: none;
+  line-height: 1;
+}
+
+.footer__menu > li {
+  display: flex;
+  flex-direction: column;
+  gap: rem(33);
+}
+
+.footer__menu a {
+  color: $color-white;
+  font-weight: $medium;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu > li > a {
+  font-size: rem(22);
+  gap: rem(12);
+  @include mq(md) {
+    font-size: rem(18);
+  }
+}
+
+.footer__menu a:hover {
+  opacity: 0.8;
+}
+
+// 外部リンク（異なるドメイン）のスタイル
+.footer__menu .external-link > a {
+  position: relative;
+  padding-right: rem(22);
+}
+
+.footer__menu .external-link > a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background-image: url('../image/site-change-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0) invert(1);
+  margin-left: rem(6);
+}
+
+// メニューの説明文
+.footer__menu .menu-item-description {
+  font-size: rem(16);
+  font-weight: $bold;
+  opacity: 0.3;
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: $second-font-family;
+
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+// 第2階層（サブメニュー）
+.footer__menu .sub-menu {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+}
+
+.footer__menu .sub-menu a {
+  font-size: rem(16);
+  font-weight: $bold;
+  letter-spacing: 0;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
+
+@include mq(md) {
+  .section-title-contents.section-title-contents--contact {
+    margin-bottom: rem(32);
+  }
+  .footer__contact-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .footer__menu {
+    flex-direction: column;
+    gap: rem(40);
+  }
+  .footer__menu > li {
+    gap: rem(20);
+  }
+}

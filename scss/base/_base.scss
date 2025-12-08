@@ -1,0 +1,99 @@
+@use "../global" as *;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  
+  @include mq(md) {
+    font-size: vw(375px, 16px);
+  }
+}
+
+body {
+  background-color: $color-bg;
+  font-family: $base-font-family;
+  color: $color-black;
+  line-height: calc(36 / 16);
+  letter-spacing: -0.02em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+// コンテナ
+.container {
+  width: 100%;
+  max-width: calc($inner + ($padding-pc * 2));
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+
+  @include mq(md) {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+// ユーティリティクラス
+.only-sp {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.only-pc {
+  @include mq(md) {
+    display: none;
+  }
+}
+
+// フェードインアニメーション
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+// メニューが開いている時のbodyスクロール制御
+body.menu-open {
+  overflow: hidden;
+
+  @include mq(md) {
+    overflow: hidden;
+  }
+}
+
+
+.color-theme {
+  color: $color-theme;
+}
+.weight-bold {
+  font-weight: $bold;
+}

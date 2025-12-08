@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+// Base styles
+@use "./base";
+
+// Layout components
+@use "./page/header";
+@use "./page/footer";
+
+// Top page sections
+@use "./page/fv";
+@use "./page/philosophy";
+@use "./page/services";
+@use "./page/recruit";
+@use "./page/contact";
+
+// Page templates
+@use "./page/page";
+@use "./page/page-philosophy";
+@use "./page/page-company";
+@use "./page/page-services";
+@use "./page/page-contact";
+
+// Archive & Single pages
+@use "./page/archive";
+@use "./page/single";
+@use "./page/taxonomy";
+@use "./page/search";
+@use "./page/404" as error404;
+
+// Common components
+@use "./page/page-fv";
+@use "./page/section";
+@use "./page/common";

@@ -1,0 +1,249 @@
+@use "../global" as *;
+
+// タクソノミーページ（アーカイブと同様のスタイル）
+.page-taxonomy {
+  padding-bottom: rem(80);
+
+  @include mq(md) {
+    padding-bottom: rem(60);
+  }
+}
+
+.taxonomy-content {
+  padding-top: rem(80);
+
+  @include mq(md) {
+    padding-top: rem(60);
+  }
+}
+
+.taxonomy-content__description {
+  margin-bottom: rem(40);
+  font-size: rem(16);
+  line-height: 1.8;
+  color: $color-main_gray;
+
+  @include mq(md) {
+    margin-bottom: rem(30);
+    font-size: rem(14);
+  }
+}
+
+.taxonomy-content__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(40) rem(30);
+
+  @include mq(md) {
+    grid-template-columns: 1fr;
+    gap: rem(30);
+  }
+}
+
+.taxonomy-item {
+  background-color: $color-white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.taxonomy-item__link {
+  display: block;
+  text-decoration: none;
+}
+
+.taxonomy-item__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .taxonomy-item:hover & img {
+    transform: scale(1.05);
+  }
+}
+
+.taxonomy-item__image--noimage {
+  background-color: #f5f5f5;
+
+  img {
+    opacity: 0.5;
+  }
+}
+
+.taxonomy-item__content {
+  padding: rem(24);
+
+  @include mq(md) {
+    padding: rem(20);
+  }
+}
+
+.taxonomy-item__meta {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  margin-bottom: rem(12);
+  flex-wrap: wrap;
+}
+
+.taxonomy-item__date {
+  font-size: rem(14);
+  color: $color-main_gray;
+  font-family: $second-font-family;
+
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.taxonomy-item__type {
+  display: inline-block;
+  padding: rem(4) rem(12);
+  font-size: rem(12);
+  color: $color-white;
+  background-color: $color-theme;
+  border-radius: 3px;
+  font-weight: $medium;
+
+  @include mq(md) {
+    font-size: rem(11);
+    padding: rem(3) rem(10);
+  }
+}
+
+.taxonomy-item__title {
+  font-size: rem(18);
+  font-weight: $bold;
+  color: $color-black;
+  line-height: 1.6;
+  margin-bottom: rem(12);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.taxonomy-item__excerpt {
+  font-size: rem(14);
+  color: $color-main_gray;
+  line-height: 1.7;
+  margin-bottom: rem(16);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.taxonomy-item__more {
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  font-size: rem(14);
+  color: $color-theme;
+  font-weight: $bold;
+  font-family: $second-font-family;
+
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.taxonomy-item__arrow {
+  width: 16px;
+  height: auto;
+  fill: $color-theme;
+  transition: transform 0.3s ease;
+
+  .taxonomy-item:hover & {
+    transform: translateX(5px);
+  }
+}
+
+.taxonomy-content__no-posts {
+  text-align: center;
+  padding: rem(80) rem(20);
+  font-size: rem(16);
+  color: $color-main_gray;
+
+  @include mq(md) {
+    padding: rem(60) rem(20);
+    font-size: rem(14);
+  }
+}
+
+// ページネーション
+.taxonomy-pagination {
+  margin-top: rem(60);
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: rem(10);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 40px;
+    padding: 0 rem(12);
+    font-size: rem(14);
+    font-weight: $medium;
+    color: $color-main_gray;
+    background-color: $color-white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    @include mq(md) {
+      min-width: 36px;
+      height: 36px;
+      font-size: rem(13);
+    }
+
+    &:hover {
+      background-color: rgba(1, 114, 213, 0.1);
+      border-color: $color-theme;
+      color: $color-theme;
+    }
+
+    &.current {
+      background-color: $color-theme;
+      border-color: $color-theme;
+      color: $color-white;
+      font-weight: $bold;
+    }
+  }
+}
