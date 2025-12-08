@@ -8,7 +8,7 @@
   <title>やすか社長バースデイ＆L・コネクト5周年パーティーのお知らせ</title>
   
   <!-- Favicon -->
-  <link rel="icon" href="image/favicon.ico">
+  <link rel="icon" href="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/favicon.ico">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +16,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/')); ?>/css/style.css">
 </head>
 <body>
   <header id="birth-header" class="birth-header">
     <div class="birth-header__container container">
       <div class="birth-header__text">
-        <img src="" alt="">
+        <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/header.webp" alt="やすか社長バースデイ＆L・コネクト5周年パーティーのお知らせ">
       </div>
     </div>
   </header>
@@ -32,15 +32,15 @@
       <div class="birth-wrapper">
         <div class="birth-fv__inner container">
           <div class="birth-fv__contentes">
-            <img src="" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/fv.webp" alt="５周年＆やすか社長バースデイパーティー開催決定！">
           </div>
         </div>
         <div class="birth-fv__ceo-image">
-          <img src="" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/ceo-image.webp" alt="やすか社長">
         </div>
       </div>
       <div class="birth-fv__ribbon">
-        <img src="/image/bg-03.webp" alt="リボン">
+        <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/bg-03.webp" alt="リボン">
       </div>
     </section>
 
@@ -49,7 +49,7 @@
         <div class="birth-wrapper">
           <div class="birth-key-message__inner container">
             <div class="birth-key-message__contentes">
-              <img src="" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/key-message.webp" alt="キーメッセージ">
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
         <div class="birth-wrapper">
           <div class="birth-head__inner container">
             <div class="birth-head__contentes">
-              <img src="" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/head.webp" alt="見出し">
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
         <div class="birth-wrapper">
           <div class="birth-description__inner container">
             <div class="birth-description__contentes">
-              <img src="" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/description.webp" alt="説明文">
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="birth-wrapper">
           <div class="birth-ribbon__inner container">
             <div class="birth-ribbon__contentes">
-              <img src="" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/birth-ribbon.webp" alt="リボン">
             </div>
           </div>
         </div>
@@ -85,7 +85,24 @@
         <div class="birth-wrapper">
           <div class="birth-info__inner container">
             <div class="birth-info__contentes">
-              <img src="" alt="">
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-01.webp" alt="開催情報">
+              </div>
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02.webp" alt="開催情報">
+              </div>
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-03.webp" alt="開催情報">
+              </div>
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-04.webp" alt="開催情報">
+              </div>
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-05.webp" alt="開催情報">
+              </div>
+              <div class="birth-info__item">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-06.webp" alt="開催情報">
+              </div>
             </div>
           </div>
         </div>
@@ -95,7 +112,12 @@
       <div class="birth-wrapper">
         <div class="birth-form__inner container">
           <div class="birth-form__contentes">
-            <img src="" alt="">
+            <p class="birth-form__description">
+              ご参加希望の方はこちらからお申し込みください。
+            </p>
+            <div class="birth-form__contentes-form">
+              <?php echo do_shortcode('[contact-form-7 id="123" title="バースデイ＆5周年パーティー"]'); ?>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +126,7 @@
       <div class="birth-wrapper">
         <div class="birth-footer__inner container">
           <div class="birth-footer__contentes">
-            <img src="" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/logo-color.webp" alt="ロゴ">
           </div>
         </div>
       </div>
