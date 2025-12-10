@@ -101,22 +101,29 @@
           <div class="birth-info__inner container">
             <div class="birth-info__contentes">
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-01.webp" alt="開催情報">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-01.webp" alt="開催日時">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02.webp" alt="開催情報">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02.webp" alt="開催日時">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-03.webp" alt="開催情報">
+                <div class="birth-info__item--map">
+                  <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-03.webp" alt="会場場所">
+                </div>
+                <div class="birth-info__item--map-btn">
+                  <a href="<?php echo esc_url('https://maps.app.goo.gl/Bbfv35CdYuo2augz6')?>">
+                    <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/map-btn.webp" alt="会場場所">
+                  </a>
+                </div>
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-04.webp" alt="開催情報">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-04.webp" alt="会費">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-05.webp" alt="開催情報">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-05.webp" alt="形式・着席形式">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-06.webp" alt="開催情報">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-06.webp" alt="ドレスコード">
               </div>
             </div>
           </div>

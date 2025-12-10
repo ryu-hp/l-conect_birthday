@@ -259,7 +259,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1.875rem 0 2.375rem;
+  padding: 1rem 0 1.5rem;
   position: relative;
   z-index: 2;
 }
@@ -288,7 +288,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
-  margin-top: -2.5rem;
+}
+
+.birth-fv__contentes {
+  padding: 1.25rem 0;
 }
 
 .birth-fv__ceo-image {
@@ -306,15 +309,12 @@ body {
   margin-left: calc(50% - 50vw);
 }
 
-.birth-bg-wrapper {
-  background-image: url(../image/bg-04.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-}
-
 .birth-key-message {
   padding: 1.875rem 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .birth-key-message__contentes {
@@ -361,11 +361,15 @@ body {
 }
 
 .birth-description {
-  padding: 100px 0;
+  padding: 50px 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 @media screen and (max-width: 767px) {
   .birth-description {
-    padding: 6.25rem 0;
+    padding: 3.125rem 0;
   }
 }
 
@@ -419,6 +423,10 @@ body {
 
 .birth-info {
   padding: 5rem 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 @media screen and (max-width: 767px) {
   .birth-info {
@@ -436,6 +444,14 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.birth-info__item--map-btn {
+  margin-top: 1.125rem;
+}
+
+.birth-info__item--map-btn a {
+  display: block;
+}
+
 .birth-form {
   background: #2a2a2a;
   padding: 5rem 0 6.25rem;
@@ -443,10 +459,15 @@ body {
 
 .birth-form__description {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .birth-form__description {
+    font-size: 0.875rem;
+  }
 }
 
 .birth-footer {
@@ -563,8 +584,22 @@ body {
   background: transparent;
 }
 
+.form-item__input.form-item__input--radio {
+  border: none;
+  padding: 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
 .wpcf7-list-item {
   margin-left: 0;
+}
+
+.wpcf7-list-item-label {
+  color: #ffffff;
 }
 
 .form-item__label + .wpcf7-form-control-wrap {
@@ -573,72 +608,45 @@ body {
           flex-grow: 1;
 }
 
-.form-item__input--privacy-policy {
-  padding: 1.5rem 1.25rem;
-  height: 12rem;
-  overflow-y: scroll;
-  font-size: 0.9375rem;
-  line-height: 1.7333333333;
-  color: #313131;
-  background-color: #ffffff;
-  border: 1px solid #C6D9EE;
-  border-radius: 0.25rem;
-  width: calc(100% - 16.75rem);
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-}
-
-.form-item.form-item--check {
-  padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 3.5rem;
-  border: none;
-}
-
-.form-item__input--checkbox .wpcf7-list-item-label {
-  padding-left: 2.375rem;
-  font-size: 1.125rem;
-  position: relative;
-  font-weight: 500;
-}
-
-.form-item__input--checkbox .wpcf7-list-item-label::before {
-  position: absolute;
+.wpcf7-list-item-label::before {
   content: "";
+  position: absolute;
   display: inline-block;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 1.875rem;
-  height: 1.875rem;
-  background: #D8E1EA;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2px;
+  background: #ffffff;
   left: 0;
-  border-radius: 0.125rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-.form-item__input--checkbox .wpcf7-list-item-label::after {
+.form-item__input--radio .wpcf7-list-item-label {
+  padding-left: 2.375rem;
+  font-size: 1rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.form-item__input--radio .wpcf7-list-item-label::after {
   content: "";
   position: absolute;
   display: inline-block;
   width: 0.5rem;
   height: 0.875rem;
-  border: solid #ffffff;
+  border: solid transparent;
   border-width: 0 3px 3px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   top: 50%;
-  left: 0.6875rem;
+  left: 0.5rem;
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
 }
 
-.form-item__input--checkbox input:checked + .wpcf7-list-item-label::after {
-  border-color: #ed1c24;
+.form-item__input--radio input:checked + .wpcf7-list-item-label::after {
+  border-color: #998043;
 }
 
 .form-item.form-item--submit {

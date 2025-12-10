@@ -17,7 +17,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: rem(30) 0 rem(38);
+  padding: rem(16) 0 rem(24);
   position: relative;
   z-index: 2;
 }
@@ -45,7 +45,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
-  margin-top: rem(-40);
+}
+
+.birth-fv__contentes {
+  padding: rem(20) 0;
 }
 
 .birth-fv__ceo-image {
@@ -63,15 +66,19 @@ body {
 }
 
 // バースデー背景
-.birth-bg-wrapper {
-  background-image: url(../image/bg-04.webp);
-  background-size: contain;
-  background-position: center;
-  background-repeat: repeat;
-}
+// .birth-bg-wrapper {
+//   background-image: url(../image/bg-04.webp);
+//   background-size: contain;
+//   background-position: center;
+//   background-repeat: repeat;
+// }
 
 .birth-key-message {
   padding: rem(30) 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .birth-key-message__contentes {
@@ -115,9 +122,13 @@ body {
 
 // 説明セクション
 .birth-description {
-  padding: 100px 0;
+  padding: 50px 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   @include mq(md) {
-    padding: rem(100) 0;
+    padding: rem(50) 0;
   }
 }
 
@@ -169,6 +180,10 @@ body {
 // 開催情報
 .birth-info {
   padding: rem(80) 0;
+  background-image: url(../image/bg-04.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
   @include mq(md) {
     padding: rem(50) 0;
   }
@@ -183,6 +198,13 @@ body {
   margin-bottom: rem(40); 
 }
 
+.birth-info__item--map-btn {
+  margin-top: rem(18);
+}
+.birth-info__item--map-btn a {
+  display: block;
+}
+
 // フォームセクション
 .birth-form {
   background: #2a2a2a;
@@ -192,10 +214,13 @@ body {
 
 .birth-form__description{
   color: #fff;
-  font-size: rem(14);
+  font-size: rem(24);
   font-weight: $bold;
   text-align: center;
   margin-bottom: rem(40);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 // フッター
@@ -295,68 +320,57 @@ body {
   padding: 0;
   background: transparent;
 }
+.form-item__input.form-item__input--radio {
+  border: none;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  gap: rem(32);
+}
 
 .wpcf7-list-item {
   margin-left: 0;
+}
+.wpcf7-list-item-label {
+  color: $color-white;
 }
 .form-item__label + .wpcf7-form-control-wrap {
   flex-grow: 1;
 }
 
-.form-item__input--privacy-policy {
-  padding: rem(24) rem(20);
-  height: rem(192);
-  overflow-y: scroll;
-  font-size: rem(15);
-  line-height: calc(26 / 15);
-  color: $color-black;
-  background-color: $color-white;
-  border: 1px solid #C6D9EE;
-  border-radius: rem(4);
-  width: calc(100% - rem(268));
-  flex-grow: 0;
-}
-
-.form-item.form-item--check {
-  padding: 0;
-  justify-content: center;
-  margin-bottom: rem(56);
-  border: none;
-}
-.form-item__input--checkbox .wpcf7-list-item-label {
-  padding-left: rem(38);
-  font-size: rem(18);
-  position: relative;
-  font-weight: 500;
-}
-.form-item__input--checkbox .wpcf7-list-item-label::before {
-  position: absolute;
+.wpcf7-list-item-label::before {
   content: "";
+  position: absolute;
   display: inline-block;
   top: 50%;
   transform: translateY(-50%);
-  width: rem(30);
-  height: rem(30);
-  background: #D8E1EA;
+  width: rem(24);
+  height: rem(24);
+  border-radius: 2px;
+  background: $color-white;
   left: 0;
-  border-radius: rem(2);
-  box-sizing: border-box;
 }
-.form-item__input--checkbox .wpcf7-list-item-label::after {
+.form-item__input--radio .wpcf7-list-item-label {
+  padding-left: rem(38);
+  font-size: rem(16);
+  position: relative;
+  font-weight: 500;
+}
+.form-item__input--radio .wpcf7-list-item-label::after {
   content:"";
   position: absolute;
   display: inline-block;
   width: rem(8);
   height: rem(14);
-  border:solid $color-white;
+  border:solid transparent;
   border-width: 0 3px 3px 0;
   box-sizing: border-box;
   top: 50%;
-  left: rem(11);
+  left: rem(8);
   transform: translateY(-50%) rotate(45deg);
 }
-.form-item__input--checkbox input:checked + .wpcf7-list-item-label::after {
-  border-color: $color-theme;
+.form-item__input--radio input:checked + .wpcf7-list-item-label::after {
+  border-color: $color-gold;
 }
 .form-item.form-item--submit {
   padding: 0;
