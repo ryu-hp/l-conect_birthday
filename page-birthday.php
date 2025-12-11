@@ -107,8 +107,11 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02.webp" alt="開催日時">
               </div>
               <div class="birth-info__item">
-                <div class="birth-info__item--map">
+                <div class="birth-info__item--map-info">
                   <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-03.webp" alt="会場場所">
+                </div>
+                <div class="birth-info__item--map-image">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.646146558832!2d139.69945185731228!3d35.65642252207962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b57108f7827%3A0x8993dd3eac5ddf34!2z44K744Or44Oq44Ki44Oz44K_44Ov44O85p2x5oCl44Ob44OG44Or!5e0!3m2!1sja!2sjp!4v1765454370281!5m2!1sja!2sjp" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="birth-info__item--map-btn">
                   <a href="<?php echo esc_url('https://maps.app.goo.gl/Bbfv35CdYuo2augz6')?>">

@@ -198,6 +198,12 @@ body {
   margin-bottom: rem(40); 
 }
 
+.birth-info__item--map-image {
+  margin-top: rem(21);
+}
+.birth-info__item--map-image iframe {
+  aspect-ratio: 2 / 1;
+}
 .birth-info__item--map-btn {
   margin-top: rem(18);
 }
