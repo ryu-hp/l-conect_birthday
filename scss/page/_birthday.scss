@@ -400,7 +400,7 @@ body {
   max-width: rem(346);
   width: 100%;
 }
-.form-item__input--submit {
+.form-item__input.form-item__input--submit {
   color: $color-black;
   background: linear-gradient(90deg, #f0c864 0%, #ffffec 50.9%, #f0c864 100%);
   border: 2px solid $color-white;
@@ -436,6 +436,10 @@ body {
 }
 .form-item__submit-content:hover .form-item__input--submit {
   opacity: 0.7;
+}
+
+.wpcf7-response-output {
+  color: $color-white;
 }
 
 @include mq(md) {

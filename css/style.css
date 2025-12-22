@@ -691,7 +691,7 @@ body {
   width: 100%;
 }
 
-.form-item__input--submit {
+.form-item__input.form-item__input--submit {
   color: #313131;
   background: -webkit-gradient(linear, left top, right top, from(#f0c864), color-stop(50.9%, #ffffec), to(#f0c864));
   background: linear-gradient(90deg, #f0c864 0%, #ffffec 50.9%, #f0c864 100%);
@@ -734,6 +734,10 @@ body {
 
 .form-item__submit-content:hover .form-item__input--submit {
   opacity: 0.7;
+}
+
+.wpcf7-response-output {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
