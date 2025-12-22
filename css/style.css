@@ -298,8 +298,8 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transform: translateX(14%);
-          transform: translateX(14%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
   width: 50.6666666667%;
 }
 
@@ -549,6 +549,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1;
 }
 
 .form-item__label--category {
@@ -562,6 +563,11 @@ body {
 
 .form-item__label--category-must {
   background-color: #998043;
+  color: #ffffff;
+}
+
+.form-item__label--category-any {
+  background-color: #aaaaaa;
   color: #ffffff;
 }
 
@@ -599,7 +605,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wpcf7-list-item {

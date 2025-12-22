@@ -104,7 +104,7 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-01.webp" alt="開催日時">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02.webp" alt="開催日時">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-02-invitation.webp" alt="開催日時">
               </div>
               <div class="birth-info__item">
                 <div class="birth-info__item--map-info">
@@ -126,7 +126,7 @@
                 <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-05.webp" alt="形式・着席形式">
               </div>
               <div class="birth-info__item">
-                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-06.webp" alt="ドレスコード">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-06-invitation.webp" alt="ドレスコード">
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  transform: translateX(14%);
+  transform: translateX(20%);
   width: calc(380 / 750 * 100%);
 }
 
@@ -291,6 +291,7 @@ body {
   color: $color-white;
   display: flex;
   align-items: center;
+  line-height: 1;
 }
 .form-item__label--category {
   display: inline-block;
@@ -302,6 +303,10 @@ body {
 }
 .form-item__label--category-must {
   background-color: #998043;
+  color: $color-white;
+}
+.form-item__label--category-any {
+  background-color: #aaaaaa;
   color: $color-white;
 }
 .form-item__input {
@@ -331,7 +336,8 @@ body {
   padding: 0;
   background: transparent;
   display: flex;
-  gap: rem(32);
+  gap: rem(16);
+  flex-wrap: wrap;
 }
 
 .wpcf7-list-item {
