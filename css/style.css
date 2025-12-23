@@ -463,6 +463,9 @@ body {
 
 .birth-info__item--map-info-second {
   margin-top: 2rem;
+  max-width: 92%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .birth-form {
