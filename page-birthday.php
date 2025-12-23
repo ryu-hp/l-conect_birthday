@@ -76,6 +76,17 @@
                   <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/map-btn.webp" alt="会場場所">
                 </a>
               </div>
+              <div class="birth-info__item--map-info-second">
+                <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-03-2.webp" alt="会場場所">
+              </div>
+              <div class="birth-info__item--map-image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.770613937333!2d139.6995074!3d35.6580228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b57b8395555%3A0x67856eabd468a64!2sigu%26peace!5e0!3m2!1sja!2sjp!4v1766472626848!5m2!1sja!2sjp" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="birth-info__item--map-btn">
+                <a href="<?php echo esc_url('https://maps.app.goo.gl/AabvtjxkUTqi5tt3A')?>">
+                  <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/map-btn.webp" alt="会場場所">
+                </a>
+              </div>
             </div>
             <div class="birth-info__item">
               <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/info-04.webp" alt="会費">

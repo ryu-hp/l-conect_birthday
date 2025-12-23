@@ -450,6 +450,7 @@ body {
 
 .birth-info__item--map-image iframe {
   aspect-ratio: 2/1;
+  margin-bottom: 0;
 }
 
 .birth-info__item--map-btn {
@@ -458,6 +459,10 @@ body {
 
 .birth-info__item--map-btn a {
   display: block;
+}
+
+.birth-info__item--map-info-second {
+  margin-top: 2rem;
 }
 
 .birth-form {
