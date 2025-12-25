@@ -486,6 +486,18 @@ body {
   }
 }
 
+.birth-form__note {
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .birth-form__note {
+    font-size: 0.875rem;
+  }
+}
+
 .birth-footer {
   background-image: url(../image/bg-08.webp);
   background-size: cover;
@@ -613,12 +625,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.wpcf7-list-item {
+.form-item__input--radio .wpcf7-list-item {
   margin-left: 0;
 }
 

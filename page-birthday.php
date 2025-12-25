@@ -107,11 +107,14 @@
       <div class="birth-form__inner container">
         <div class="birth-form__contentes">
           <p class="birth-form__description">
-            ご参加希望の方はこちらからお申し込みください。
+            ご参加希望の方はこちらからご入力をお願い致します。
           </p>
           <div class="birth-form__contentes-form">
             <?php echo do_shortcode('[contact-form-7 id="e470f08" title="お問い合わせフォーム"]'); ?>
           </div>
+          <p class="birth-form__note">
+            *弊社が祝花の手配させて頂く場合、後日、花屋より入力いただいたメールアドレス宛に請求書が届きます。
+          </p>
         </div>
       </div>
     </div>

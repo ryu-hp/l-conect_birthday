@@ -235,6 +235,15 @@ body {
     font-size: rem(14);
   }
 }
+.birth-form__note {
+  color: #fff;
+  font-size: rem(18);
+  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(14);
+  }
+}
 
 // フッター
 .birth-footer {
@@ -343,11 +352,11 @@ body {
   padding: 0;
   background: transparent;
   display: flex;
-  gap: rem(16);
+  gap: rem(32);
   flex-wrap: wrap;
 }
 
-.wpcf7-list-item {
+.form-item__input--radio .wpcf7-list-item {
   margin-left: 0;
 }
 .wpcf7-list-item-label {
@@ -448,6 +457,7 @@ body {
 .wpcf7-response-output {
   color: $color-white;
 }
+
 
 @include mq(md) {
   .form-item__input--privacy-policy {
