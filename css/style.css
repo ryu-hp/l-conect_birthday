@@ -489,8 +489,11 @@ body {
 .birth-form__note {
   color: #fff;
   font-size: 1.125rem;
-  text-align: center;
   margin-top: 2.5rem;
+  max-width: 580px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .birth-form__note {

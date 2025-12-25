@@ -238,8 +238,11 @@ body {
 .birth-form__note {
   color: #fff;
   font-size: rem(18);
-  text-align: center;
   margin-top: rem(40);
+  max-width: 580px;
+  margin-right:auto;
+  margin-left:auto;
+  text-align: left;
   @include mq(md) {
     font-size: rem(14);
   }
