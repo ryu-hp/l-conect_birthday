@@ -7,6 +7,11 @@
         <div class="birth-fv__contentes">
           <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/fv.webp" alt="５周年＆やすか社長バースデイパーティー開催決定！">
         </div>
+        <div class="birth-fv__btn">
+          <a href="#birth-form">
+            <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/KV_btn.webp" alt="出席のご回答はこちらから">
+          </a>
+        </div>
       </div>
       <div class="birth-fv__ceo-image">
         <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/ceo-image.webp" alt="やすか社長">
