@@ -46,4 +46,28 @@ document.addEventListener('DOMContentLoaded', () => {
       fadeInObserver.observe(element);
     });
   }
+
+  // fix-bottomのフェードアウト制御
+  const fixBottom = document.querySelector('.fix-bottom');
+  const birthForm = document.querySelector('#birth-form');
+  
+  if (fixBottom && birthForm) {
+    const fixBottomObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // #birth-formが表示されたら.fix-bottomを非表示
+          fixBottom.classList.add('is-hidden');
+        } else {
+          // #birth-formが表示されなくなったら.fix-bottomを表示
+          fixBottom.classList.remove('is-hidden');
+        }
+      });
+    }, {
+      // 画面下部から10%の位置で検知
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0
+    });
+
+    fixBottomObserver.observe(birthForm);
+  }
 });
