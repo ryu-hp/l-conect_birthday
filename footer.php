@@ -10,7 +10,7 @@
     </section>
     <div class="fix-bottom">
       <div class="fix-bottom__inner container">
-        <a href="#bir　th-form">
+        <a href="#birth-form">
           <img src="<?php echo esc_url(get_theme_file_uri('/')); ?>/image/KV_btn.webp" alt="出席のご回答はこちらから">
         </a>
       </div>
